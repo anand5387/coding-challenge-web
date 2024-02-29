@@ -2,24 +2,24 @@ import React from 'react';
 import logo from './logo.svg';
 import "bootstrap/dist/css/bootstrap.min.css";
 import './App.css';
+import PetsListByType from './components/PetsListByType';
+import { PetType } from './model/Pet';
 
 function App() {
+
+  const petType: PetType = PetType.Cat
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+    <div>
+      <nav className="navbar navbar-expand navbar-dark bg-dark">
+        <a href="/" className="navbar-brand">
+          Medibank Coding Challenge
         </a>
-      </header>
+      </nav>
+
+      <div className="container mt-3">
+        <PetsListByType />
+      </div>
     </div>
   );
 }
