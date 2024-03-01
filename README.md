@@ -35,3 +35,11 @@ Jasper
 Notes
 
 ```
+
+## Example
+Implemented best practices based application. Able to filter by any animal from Code.
+ - This can be made dynamic by adding radio buttons or filter by Pet types
+ - Able to add simple search to filter 
+
+ Implemented basic test execution to check tilte
+ - Only done basic able to test lists using 

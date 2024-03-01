@@ -46,7 +46,7 @@ const PetsListByType: React.FC = () => {
                 <ul className="list-group">
                     {
                         simplifiedPets().flatMap((value, index) => (
-                            <li className="list-group-item" key={index} >
+                            <li className="list-group-item" key={value.gender} >
                                 {value.gender}
                                 <ul className="list-group">
                                     {
