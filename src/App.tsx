@@ -13,7 +13,7 @@ function App() {
         </a>
       </nav>
 
-      <div className="container mt-3">
+      <div className="container-fluid">
         <PetsListByType />
       </div>
     </div>

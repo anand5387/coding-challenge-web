@@ -41,19 +41,20 @@ const PetsListByType: React.FC = () => {
 
     return (
         <div className="list row">
-            <div>Pet names sorted by names with owner gender type :: Filtered Pet - {petType}</div>
+            <h5>Pet names sorted by names with owner gender type :: Filtered Pet - {petType}</h5>
             <div className="col-md-6">
-                <ul className="list-group">
+                <ul className="list-group ">
                     {
                         simplifiedPets().flatMap((value, index) => (
-                            <li className="list-group-item" key={value.gender} >
+                            <li className="list-group-item list-group-item-dark" key={value.gender} >
                                 {value.gender}
-                                <ul className="list-group">
+                                <span className="ml-10 badge badge-primary badge-pill">{value.pets.length}</span>
+                                <ul className="list-group list-group-flush">
                                     {
                                         value.pets && value.pets.length ?
                                         value.pets.map((innerValue, innerIndex) => (
-                                            <li className="pl-4 list-group-item" key= { index + "-" + innerIndex}>{innerValue}</li>
-                                        )) : <li className="pl-4 list-group-item">Not available</li>
+                                            <li className="pl-4 list-group-item list-group-item-light" key= { index + "-" + innerIndex}>{innerValue}</li>
+                                        )) : <li className="pl-4 list-group-item list-group-item-info" >Not available</li>
                                     }
                                 </ul>
                             </li>

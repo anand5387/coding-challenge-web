@@ -1,0 +1,10 @@
+.badge-primary {
+  color: #fff;
+  background-color: #007bff;
+}
+.badge-pill {
+  padding-right: 0.6em;
+  padding-left: 0.6em;
+  border-radius: 10rem;
+  margin-left: 1rem;
+}
